@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Lords.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Seeker</title>
+  </head>
+  <!-- Properties of body-->
+  <body
+    class="bg-slate-800 flex w-screen h-screen font-Roboto relative md:overflow-hidden lg:overflow-hidden"
+  >
+    <!--How to always keep headear at the top and transparent-->
+    <header>
+      <div
+        class="flex justify-between items-end w-full h-16 fixed flex-col md:flex-row w-screen bg-red-800/5 md:p-3 md:h-16 lg:p-5"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div>
+            <a href="http://www.thendo.betteryourhealth.co.za/">
+              <h1
+                class="text-3xl font-bold text-gray-400 hover:text-cyan-300 w-fit transition-colors duration-400"
+              >
+                PILGRIM
+              </h1>
+            </a>
+          </div>
+          <div class="md:hidden text-white">
+            <button id="open" class="block">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+            <button id="close" class="hidden">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="menu"
+          class="hidden flex-col items-end divide-y p-5 md:space-y-0 md:space-x-3 text-white md:flex md:flex-row md:items-center md:space-x-5 md:divide-none"
+        >
+          <div>
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 transition-colors duration-400"
+              href="index.html"
+              >Home</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 transition-colors duration-400"
+              href="Portfolio.html"
+              >Portfolio</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="work.html"
+              >Work</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Usage of grids to have a neat desktop layout-->
+    <main
+      class="flex justify-center items-Center bg-slate-800 w-screen h-screen -my-10 p-16 overflow-x-hidden md:justify-center md:items-center md:my-5 md:p-10 md:overflow-y-hidden"
+    >
+      <div class="flex-1 max-w-3xl p-12">
+        <div
+          class="grid grid-cols-1 grid-rows-1 gap-4 auto-rows-fr auto-cols-fr md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3"
+        >
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="https://github.com/Thendo-T?tab=overview&from=2022-03-01&to=2022-03-31"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">Github</h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              The majority of my projects, hosted or not, are posted here. You
+              can find them in code format on Github.
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="http:/linkedin.com/ThendoThovhakale"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">linkedin</h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              This is a professional profile from which you can contact me and
+              keep track of where I work.
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="https://codepen.io/thendo-t"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">Codepen</h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              A code editing and compiling site that I usually use to link and
+              prove the completion of my work for my Freecodecamp projects.
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="mailto:Thendothovhakale0002@gmail.com"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">Email</h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              This is my official email address. If you'd like to contact me
+              about a project, write an email to this address.
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="https://www.frontendmentor.io/profile/Thendo-T"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">
+                Front-end-mentor
+              </h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              Frontentmentor is where I find front end coding problems, to
+              complete with some resemblance to the template provided.
+            </p>
+          </div>
+          <div
+            class="p-4 bg-slate-700 border-1-8 border-transparent rounded-md shadow-md space-y-2"
+          >
+            <a
+              class="text-xl font-bold text-white hover:text-cyan-300 cursor-pointer w-fit transition-colors duration-400"
+              href="tel:+27677271163"
+              target="_blank"
+            >
+              <h2 class="text-lg font-semibold leading-6">Mobile</h2></a
+            >
+            <p class="text-sm font-normal text-slate-400">
+              This is my mobile number. If you'd rather speak than type, please
+              contact me.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Making sure the footer has a copyright sign and that it is transparent and always at the bottom-->
+    <footer
+      class="bg-red-800/5 text-sm text-white text-center fixed inset-x-0 bottom-0 p-1 cursor-pointer w-screen md:text-xl md:inset-x-3 lg:text-xl"
+    >
+      &copy; Created by
+      <a
+        class="hover:text-cyan-300 transition-colors duration-400"
+        href="https://www.thendo.betteryourhealth.co.za"
+        target="_blank"
+        >Thendo Thovhakale</a
+      >
+      on 2022
+    </footer>
+    <script src="./Menu.js"></script>
+  </body>
+</html>
